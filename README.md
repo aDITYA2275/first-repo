@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    html{
+        scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #0d1117;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: transparent;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f05454;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+    }
+    .hero-text h2 {
+      font-size: 2rem;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #f05454;
+      font-weight: 800;
+    }
+    .hero-text p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      background: #f05454;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .buttons a:hover {
+      background: #ff7676;
+    }
+    .hero-image {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle at center, #f05454, transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: glow 3s infinite alternate;
+    }
+    .hero-image img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #f05454;
+    }
+    @keyframes glow {
+      0% { box-shadow: 0 0 20px #f05454; }
+      100% { box-shadow: 0 0 50px #f05454; }
+    }
+    .skills {
+      background: #161b22;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-around;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .skills div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .about {
+      padding: 60px 10%;
+    }
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .about p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+    footer {
+      background: #0d1117;
+      padding: 20px 10%;
+      font-size: 0.9rem;
+      color: #ccc;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aditya</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="mailto: mr.aditya2275@gmail.com">E-Mail</a>
+      <a href="tel: +919304198903">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Hello, I'm</h2>
+      <h1>Aditya</h1>
+      <p>Java & Web Developer | Python Learner</p>
+      <div class="buttons">
+        <a href="https://www.instagram.com/rebelx2275/" target="_blank">Instagram</a>
+        <a href="https://wa.me/917257836433" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="myphoto.jpg" alt="Aditya">
+    </div>
+  </section>
+
+  <div class="skills">
+    <div>💻 HTML</div>
+    <div>🎨 CSS</div>
+    <div>⚡ JavaScript</div>
+    <div>☕ Java</div>
+    <div>🔧 C</div>
+    <div>🐍 Python</div>
+  </div>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Aditya — a passionate Java and Web Developer.  
+      I have also explored C and a bit of Python. Currently learning Web Development to build beautiful, functional websites.
+    </p>
+    <!--<h2>About Abhishek Nath</h2>
+    <p>
+      Abhishek is a student of NIT Jalandhar, Batch 2029.  
+      Skilled in Web Development, C++, and DSA.  
+      Contact: <a href="https://wa.me/917257836433" target="_blank">WhatsApp</a> | 
+      <a href="https://www.instagram.com/abhisheknath__/" target="_blank">Instagram</a>
+    </p>
+  </section>-->
+  <section style="padding: 50px 10%; background: #161b22; text-align: center; color: #fff;">
+  <h2 style="font-size: 2rem; margin-bottom: 30px; color: #f05454;">About Abhishek Nath</h2>
+  
+  <div style="max-width: 500px; margin: auto; background: #0d1117; border-radius: 15px; padding: 20px; 
+              box-shadow: 0 0 20px rgba(240,84,84,0.3); transition: transform 0.3s ease;">
+    <img src="abhishek-photo.jpeg" alt="Abhishek Nath" 
+         style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #f05454; margin-bottom: 15px;">
+    <h3 style="color: #f05454; font-size: 1.5rem;">Abhishek Nath</h3>
+    <p style="color: #ccc; font-size: 1rem; margin: 15px 0;">
+      Student at NIT Jalandhar (Batch 2029)  
+      Skilled in Web Development, C++, and Data Structures & Algorithms.  
+      Always curious, always building.
+    </p>
+    <div style="margin-top: 15px;">
+      <a href="https://wa.me/917257836433" target="_blank" 
+         style="padding: 8px 15px; background: #25D366; color: white; border-radius: 5px; text-decoration: none; margin-right: 8px;">WhatsApp</a>
+      <a href="https://www.instagram.com/abhisheknath__/" target="_blank" 
+         style="padding: 8px 15px; background: #E4405F; color: white; border-radius: 5px; text-decoration: none;">Instagram</a>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Aditya. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
